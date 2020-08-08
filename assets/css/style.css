@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width: 70%;
+    margin: auto;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.d-flex-colunm{
+    display: flex;
+    flex-direction: column;
+}
+
+/* 
+===============================
+Header Area CSS
+===============================
+*/
+
+.header{
+    background: #3F5C9A; 
+    padding: 10px 0; 
+}
+
+.header_left img{
+    width: 170px;
+    margin-top: 20px;
+}
+
+.header_area,
+.login_area{
+    display: flex;
+    justify-content: space-between;
+}
+.login_area label,
+.login_area input{
+    display: block;
+}
+.login_area label{
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #ffff;
+}
+.login_area .email,
+.login_area .password,
+.login_area .login{
+    margin-right: 15px;
+}
+.login_area .login{
+    margin-right: 0;
+}
+.login_area input[type="text"], 
+.login_area input[type="password"] {
+	border: 1px solid #000;
+	font-size: 13px;
+	font-weight: 300;
+	padding: 2px 5px;
+}
+.login_area input[type="text"]:focus, 
+.login_area input[type="password"]:focus{
+    outline: none;
+}
+.login_area .password a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #9cb4d8;
+    font-weight: normal;
+}
+
+.login_area .password a:hover{
+    text-decoration: underline;
+}
+
+.login_area input[type="submit"] {
+	background: #4267b2;
+	border: 1px solid #29487d;
+	color: #fff;
+	padding: 3px 8px;
+	margin-top: 23px;
+    font-weight: 600;
+    border-radius: 2px;
+}
+
+.login_area input[type="submit"]:hover{
+    color: #fff;
+    background: #3F5C9A;
+    cursor: pointer;
+}
+
+/* 
+===============================
+Main Area CSS
+===============================
+*/
+
+.main_area{
+    background: linear-gradient(white, #D3D8E8);
+    padding: 20px 0;
+}
+
+.signup_area{
+    display: flex;
+}
+
+.signup_area .left_side p{
+    color: #0e385f;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29px;
+    width: 450px;
+    word-spacing: -1px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.signup_area .left_side img{
+    width: 537px;
+    height: 195px;
+}
+
+.signup_area .right_side h2 {
+	font-size: 36px;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.signup_area .right_side h4{
+    color: #1d2129;
+    font-size: 19px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.signup_area input[type="text"], 
+.signup_area input[type="password"] {
+	border: 1px solid #bdc7d8;
+	border-radius: 5px;
+	padding: 8px 10px;
+	font-size: 18px;
+	margin: 5px 0;
+}
+.signup_area input[type="text"]:focus, 
+.signup_area input[type="password"]:focus {
+	outline: none;
+}
+
+.full_name{
+   display: flex;
+}
+.first_name{
+   margin-right: 10px;
+}
+
+.signup_area .birthday h4,
+.signup_area .gender h4{
+    margin-top: 12px;
+    font-size: 16px;
+    color: #90949c;
+}
+
+.birth_date{
+    display: flex;
+}
+
+.birth_date select{
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.gender label{
+    font-size: 18px;
+    color: #1d2129;
+    line-height: 18px;
+    font-weight: normal;
+    padding: 0 10px 0 3px;
+}
+
+.terms p{
+    font-size: 11px;
+    color: #777;
+    width: 75%;
+    margin: 16px 0;
+}
+
+.signup_btn input{
+    background: linear-gradient(#67ae55, #578843);
+    background-color: #69a74e;;
+    box-shadow: inset 0 1px 1px #a4e388;
+    border-color:  #3b6e22 #3b6e22 #2c5115;
+    border: 1px solid #3b6e22 #3b6e22 #2c5115; ;
+    font-size: 19px;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+    border-radius: 5px;
+    padding: 7px 20px;
+    min-width: 194px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: 0.4s;
+}
+.signup_btn input:hover{
+    background: linear-gradient(#578843, #67ae55);
+    cursor: pointer;
+}
+span.page{
+    color: #666;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+span.page a,
+.terms a{
+    text-decoration: none;
+    color: #3F5C9A;
+}
+
+
+/*
+=============================
+Footer Area CSS
+=============================
+*/
+.footer_area{
+    padding: 30px 0;
+}
+.footer_top {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+.footer_top ul,
+.footer_middle ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.footer_top ul li a{
+    display: block;
+    margin-right: 15px;
+    font-size: 12px;
+    color: #385898;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.footer_top ul li a:hover{
+    text-decoration: underline;
+}
+
+.footer_top li:first-child a{
+    color: #737373;
+    text-decoration: none;
+    cursor: text;
+}
+.footer_top li:last-child a {
+	font-size: 20px;
+	display: block;
+	background: #ccc;
+	padding: 0px 9px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+}
+
+.footer_top li:last-child a:hover{
+    text-decoration: none;
+}
+.footer_top li:first-child a:hover{
+    text-decoration: none;
+}
+.footer_middle{
+    margin: 10px 0;
+}
+.footer_middle ul li a {
+	display: block;
+	margin-right: 24px;
+	font-size: 12px;
+	color: #385898;
+	font-weight: 500;
+	text-decoration: none;
+	margin-bottom: 3px;
+}
+.footer_middle ul li a:hover{
+    text-decoration: underline;
+}
+
+.footer_bottom p{
+    margin-top: 20px;
+    color: #737373;
+    font-size: 11px;
+}

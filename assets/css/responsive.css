@@ -1,0 +1,40 @@
+
+@media screen and (max-width: 980px){
+    .header_area{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header_left img{
+        margin-bottom: 30px;
+    }
+
+    .signup_area{
+        display: flex;
+        flex-wrap: wrap;
+    }
+  
+}
+
+
+@media screen and (max-width: 420px){
+    .login_area{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header_left img{
+        margin-bottom: 20px;
+    }
+
+    .login_area input[type="text"], 
+    .login_area input[type="password"] {
+        font-size: 15px;
+    }
+
+    .login_area input[type="submit"] {
+        margin-top: 14px;
+    }
+}
